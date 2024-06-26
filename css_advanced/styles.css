@@ -50,6 +50,7 @@ nav ul {
   gap: 168px;
   padding: 100px;
 }
+/***************************************hero section****************************************************/
 #hero-section p {
   font-style: italic;
   font-weight: black;
@@ -92,6 +93,7 @@ nav ul {
   margin-bottom: 87px;
   color: white;
   font-size: 32px;
+  font-weight: lighter;
 }
 .card-sec {
   width: 100%;
@@ -116,9 +118,10 @@ nav ul {
 }
 #card-word {
   color: #c271ff;
+  font-weight: lighter;
 }
-/*******************************************second section*********************************************************/
-#second-section {
+/*******************************************quote section*********************************************************/
+#quote-section {
   background-color: #c271ff;
   height: 400px;
   width: 100%;
@@ -127,12 +130,100 @@ nav ul {
   justify-content: center;
   color: white;
 }
-.second-img {
+.quote-img {
   margin-right: 55px;
 }
-.second-info {
+.quote-info {
   font-size: 22px;
 }
 .third-card {
   background-color: aqua;
+}
+/********************************************quote section********************************************************************/
+#video-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 655px;
+  width: 100%;
+}
+#video-list h2 {
+  font-size: 32px;
+  margin-bottom: 75px;
+  font-weight: lighter;
+}
+#video-list h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+.video-list-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.video-first-img {
+  width: 255px;
+  height: 155px;
+}
+.video-second-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.video-play {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  z-index: 999;
+}
+
+.video-it {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: start;
+  width: 70%;
+}
+
+.video-it img {
+  margin-right: 13px;
+  justify-content: start;
+}
+
+.video-star {
+  flex-direction: row;
+  display: flex;
+  margin-right: 90px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.videos-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+#video-list p {
+  color: #071629;
+  align-items: flex-start;
+}
+#video-list h4 {
+  color: #c271ff;
+  align-items: flex-start;
+}
+.video-star i {
+  color: #c271ff;
+}
+.video-rate-time p {
+  color: #c271ff;
 }
