@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 35px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav a img {
+  width: 167px;
+  height: 29px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 52px;
+  font-size: 12px;
+}
+nav ul {
+  display: flex;
+}
+
+#hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  background-image: url(images/Object.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 168px;
+  padding: 100px;
+}
+#hero-section p {
+  font-style: italic;
+  font-weight: black;
+}
+.hero-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 156px;
+}
+.hero-info h1 {
+  color: white;
+  font-size: 120px;
+  font-weight: bold;
+}
+.hero-subtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+#hero-section button {
+  padding: 13px 20px;
+  border-radius: 22px;
+  margin-top: 38px;
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 20px black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card-sec h2 {
+  text-align: center;
+  margin-bottom: 87px;
+  color: white;
+  font-size: 32px;
+}
+.card-sec {
+  width: 100%;
+}
+.hero-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.spechial-img {
+  border-radius: 50%;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+#card-word {
+  color: #c271ff;
+}
+/*******************************************second section*********************************************************/
+#second-section {
+  background-color: #c271ff;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.second-img {
+  margin-right: 55px;
+}
+.second-info {
+  font-size: 22px;
+}
+.third-card {
+  background-color: aqua;
+}
