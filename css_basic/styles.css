@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+p {
+  color: blue;
+}
+article {
+  flex: 2;
+  overflow: auto;
+}
+article h1 {
+  color: lightblue;
+}
+aside {
+  flex: 1;
+  overflow: auto;
+}
+aside p {
+  color: lightcoral;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 1100px) {
+  body {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    display: block;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+  header .right {
+    float: none;
+  }
+}
