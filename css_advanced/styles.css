@@ -336,3 +336,8 @@ footer {
   margin-top: 95px;
   margin-bottom: 70px;
 }
+.footer-icons {
+  width: 6%;
+  display: flex;
+  justify-content: space-between;
+}
