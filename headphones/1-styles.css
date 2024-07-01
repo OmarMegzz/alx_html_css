@@ -33,6 +33,9 @@ header nav a {
   text-decoration: none;
   color: white;
 }
+nav li:hover {
+  opacity: 0.9;
+}
 header nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -47,9 +50,10 @@ header nav img {
 
 #hero-section {
   background-image: url(images/headphones_hero_1.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -89,4 +93,91 @@ header nav img {
   color: white;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.hero-info button:hover {
+  opacity: 0.9;
+}
+
+/* @media screen and (min-width: 1060px) {
+  #hero-section {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-bottom: 115px;
+  }
+  header nav ul {
+    width: 60%;
+  }
+} */
+
+/* @media screen and (max-width: 645px) {
+  #hero-section {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: 40% 40%;
+    background-size: auto;
+    height: 100vh;
+    padding-bottom: 115px;
+  }
+  header nav ul {
+    width: 60%;
+  }
+  .hero-info p {
+    margin: 20px;
+  }
+} */
+/*********************************************WHAT WE DO SECTION***********************************************************/
+
+#what-we-do {
+  height: 695px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.what-we-do-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 637px;
+  height: 148px;
+}
+.what-we-do-info h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.what-we-do-info p {
+  line-height: 26px;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.what-we-do-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 207px;
+  height: 180px;
+  text-align: center;
+}
+.what-we-do-card h2 {
+  margin-top: 24px;
+}
+.what-we-do-card p {
+  line-height: 26px;
+  font-size: 14px;
+  margin-top: 13px;
+}
+.what-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin-top: 97px;
 }
