@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans ", sans-serif;
 }
 :root {
   --text-color: var(#ff6565);
@@ -88,8 +88,7 @@ header nav img {
 .hero-info button {
   margin-top: 40px;
   margin-bottom: 65px;
-  width: 162px;
-  height: 44px;
+
   border-radius: 22px;
   background-color: #ff6565;
   color: white;
@@ -103,21 +102,6 @@ header nav img {
   opacity: 0.9;
 }
 
-/* @media screen and (max-width: 645px) {
-  #hero-section {
-    background-image: url(images/headphones_hero_1.jpg);
-    background-position: 40% 40%;
-    background-size: auto;
-    height: 100vh;
-    padding-bottom: 115px;
-  }
-  header nav ul {
-    width: 60%;
-  }
-  .hero-info p {
-    margin: 20px;
-  }
-}*/
 /*********************************************WHAT WE DO SECTION***********************************************************/
 
 #what-we-do {
@@ -170,7 +154,137 @@ header nav img {
   width: 80%;
   margin-top: 97px;
 }
+/**************************************************OUR RESULT SECTION**********************************************************/
 
+#our-result-secction {
+  background-image: url(images/headphones_hero_2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.our-result-section-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 637px;
+  text-align: center;
+  height: 184px;
+}
+.our-result-section-info h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: ;
+}
+.our-result-section-info p {
+  font-size: 16;
+  line-height: 26px;
+  margin-top: 40px;
+}
+.pentagon-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-top: 56px;
+}
+.pentagon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ff6565;
+  width: 190px;
+  height: 190px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.pentagon-card h2 {
+  font-size: 46px;
+}
+.pentagon-card h4 {
+  font-size: 14px;
+}
+/********************************************************CONTACT US*************************************************************/
+#conact-us-section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#conact-us-section h2 {
+  margin-bottom: 56px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 45px;
+}
+.form form input {
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 335px;
+  height: 29px;
+}
+.form form input::placeholder {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#conact-us-section button {
+  margin-top: 56px;
+  padding: 13px 31px;
+  border-radius: 22px;
+  border: none;
+  background: #ff6565;
+  color: white;
+  cursor: pointer;
+}
+#conact-us-section button:hover {
+  opacity: 0.9;
+}
+
+/****************************************************FOOTER****************************************************************/
+footer {
+  height: 100%;
+  background: #071629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 92px;
+}
+.footer-info img {
+  width: 161px;
+  height: 32px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 130px;
+  height: 30px;
+}
+footer p {
+  font-size: 12px;
+  margin-top: 175px;
+  margin-bottom: 39px;
+}
 /****************************************************RESPONSIVE****************************************************************/
 
 @media only screen and (max-width: 768px) {
