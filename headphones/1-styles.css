@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 * {
   padding: 0;
   margin: 0;
@@ -21,14 +24,14 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
-  top: 27px;
+  top: 2.7rem;
   position: absolute;
 }
 
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  gap: 41px;
+  gap: 4.1rem;
 }
 
 header nav ul li {
@@ -45,8 +48,8 @@ nav li:hover {
 }
 
 header nav img {
-  width: 162px;
-  height: 32px;
+  width: 16.2rem;
+  height: 3.2rem;
 }
 /*********************************************HERO SECTION****************************************************************/
 
@@ -68,34 +71,33 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 313px;
-  margin-top: 212px;
+  width: 63.7rem;
+  height: 31.3rem;
+  margin-top: 21.2rem;
   font-weight: bold;
   text-align: center;
 }
 .hero-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 .hero-info h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .hero-info p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .hero-info button {
-  margin-top: 40px;
-  margin-bottom: 65px;
-
-  border-radius: 22px;
+  margin-top: 4rem;
+  margin-bottom: 6.5rem;
+  border-radius: 2.2rem;
   background-color: #ff6565;
   color: white;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  padding: 13px 31px;
+  padding: 1.3rem 3.1rem;
 }
 
 .hero-info button:hover {
@@ -105,28 +107,30 @@ header nav img {
 /*********************************************WHAT WE DO SECTION***********************************************************/
 
 #what-we-do {
-  height: 695px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 .what-we-do-info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 148px;
+  width: 63.7rem;
+  height: 14.8rem;
 }
 .what-we-do-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
 }
 .what-we-do-info p {
-  line-height: 26px;
-  margin-top: 40px;
-  font-size: 16px;
+  line-height: 2.6rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -135,155 +139,26 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 207px;
-  height: 180px;
+  width: 20.7rem;
+  height: 18rem;
   text-align: center;
 }
 .what-we-do-card h2 {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 .what-we-do-card p {
-  line-height: 26px;
-  font-size: 14px;
-  margin-top: 13px;
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
 }
 .what-cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  margin-top: 97px;
-}
-/**************************************************OUR RESULT SECTION**********************************************************/
-
-#our-result-secction {
-  background-image: url(images/headphones_hero_2.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-}
-.our-result-section-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 637px;
-  text-align: center;
-  height: 184px;
-}
-.our-result-section-info h1 {
-  font-size: 32px;
-  font-weight: bold;
-}
-.our-result-section-info p {
-  font-size: 16;
-  line-height: 26px;
-  margin-top: 40px;
-}
-.pentagon-cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 80%;
-  margin-top: 56px;
-}
-.pentagon-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #ff6565;
-  width: 190px;
-  height: 190px;
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-}
-.pentagon-card h2 {
-  font-size: 46px;
-}
-.pentagon-card h4 {
-  font-size: 14px;
-}
-/********************************************************CONTACT US*************************************************************/
-#conact-us-section {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#conact-us-section h2 {
-  margin-bottom: 56px;
-}
-.form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 45px;
-}
-.form form input {
-  border: none;
-  border-bottom: 1px solid #979797;
-  width: 335px;
-  height: 29px;
-}
-.form form input::placeholder {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
+  margin-top: 9.7rem;
 }
 
-#conact-us-section button {
-  margin-top: 56px;
-  padding: 13px 31px;
-  border-radius: 22px;
-  border: none;
-  background: #ff6565;
-  color: white;
-  cursor: pointer;
-}
-#conact-us-section button:hover {
-  opacity: 0.9;
-}
-
-/****************************************************FOOTER****************************************************************/
-footer {
-  height: 100%;
-  background: #071629;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  flex-direction: column;
-}
-.footer-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 92px;
-}
-.footer-info img {
-  width: 161px;
-  height: 32px;
-}
-.footer-icons {
-  display: flex;
-  justify-content: space-evenly;
-  width: 130px;
-  height: 30px;
-}
-footer p {
-  font-size: 12px;
-  margin-top: 175px;
-  margin-bottom: 39px;
-}
 /****************************************************RESPONSIVE****************************************************************/
 
 @media only screen and (max-width: 768px) {
@@ -292,28 +167,37 @@ footer p {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding-bottom: 115px;
+    height: 100%;
+    padding-bottom: 11.5rem;
   }
   .hero-info {
-    padding: 0px 66px;
+    width: auto;
+    padding: 0rem 2rem;
   }
   header nav {
     width: 100%;
   }
+  .what-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .what-we-do-info {
+    width: auto;
+    padding: 0rem 2rem;
+  }
 }
-@media only screen and (max-width: 586px) {
+@media only screen and (max-width: 646px) {
   #hero-section {
     background-image: url(images/headphones_hero_1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding-bottom: 115px;
+    height: 100%;
+    padding-bottom: 11.5rem;
   }
-  .hero-info {
-    padding: 0px 66px;
-  }
+
   header nav ul {
     display: none;
   }
@@ -322,20 +206,23 @@ footer p {
     width: 100%;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 490px) {
   #hero-section {
     background-image: url(images/headphones_hero_1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding-bottom: 115px;
-    background: #ff6565;
+    height: 100%;
+
+    padding-bottom: 13rem;
+    margin-bottom: 13rem;
   }
-  .hero-info {
-    padding: 0px 66px;
-  }
+
   header nav {
     width: 100%;
+  }
+  .what-we-do-info {
+    width: auto;
+    padding: 0rem 2rem;
   }
 }
