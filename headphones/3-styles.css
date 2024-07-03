@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 * {
   padding: 0;
   margin: 0;
@@ -21,14 +24,14 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
-  top: 27px;
+  top: 2.7rem;
   position: absolute;
 }
 
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  gap: 41px;
+  gap: 4.1rem;
 }
 
 header nav ul li {
@@ -45,8 +48,8 @@ nav li:hover {
 }
 
 header nav img {
-  width: 162px;
-  height: 32px;
+  width: 16.2rem;
+  height: 3.2rem;
 }
 /*********************************************HERO SECTION****************************************************************/
 
@@ -68,65 +71,65 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 313px;
-  margin-top: 212px;
+  width: 63.7rem;
+  height: 31.3rem;
+  margin-top: 21.2rem;
   font-weight: bold;
   text-align: center;
 }
 .hero-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 .hero-info h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .hero-info p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .hero-info button {
-  margin-top: 40px;
-  margin-bottom: 65px;
-
-  border-radius: 22px;
+  margin-top: 4rem;
+  margin-bottom: 6.5rem;
+  border-radius: 2.2rem;
   background-color: #ff6565;
   color: white;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  padding: 13px 31px;
+  padding: 1.3rem 3.1rem;
 }
 
 .hero-info button:hover {
   opacity: 0.9;
 }
-
 /*********************************************WHAT WE DO SECTION***********************************************************/
 
 #what-we-do {
-  height: 695px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 11.5rem;
+  padding-bottom: 11.5rem;
 }
 .what-we-do-info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 148px;
+  width: 63.7rem;
+  height: 14.8rem;
 }
 .what-we-do-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
 }
 .what-we-do-info p {
-  line-height: 26px;
-  margin-top: 40px;
-  font-size: 16px;
+  line-height: 2.6rem;
+  margin-top: 4rem;
+  font-size: 1.6;
   text-align: center;
 }
 
@@ -135,24 +138,24 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 207px;
-  height: 180px;
+  width: 20.7rem;
+  height: 18rem;
   text-align: center;
 }
 .what-we-do-card h2 {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 .what-we-do-card p {
-  line-height: 26px;
-  font-size: 14px;
-  margin-top: 13px;
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
 }
 .what-cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  margin-top: 97px;
+  margin-top: 9.7rem;
 }
 /**************************************************OUR RESULT SECTION**********************************************************/
 
@@ -211,38 +214,40 @@ header nav img {
 }
 /********************************************************CONTACT US*************************************************************/
 #conact-us-section {
-  height: 80vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 11.5rem;
+  padding-top: 11.5rem;
 }
 #conact-us-section h2 {
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 .form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 45px;
+  gap: 4.5rem;
 }
 .form form input {
   border: none;
   border-bottom: 1px solid #979797;
-  width: 335px;
-  height: 29px;
+  width: 33.5rem;
+  height: 2.9rem;
 }
 .form form input::placeholder {
   color: black;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 #conact-us-section button {
-  margin-top: 56px;
-  padding: 13px 31px;
-  border-radius: 22px;
+  margin-top: 5.6rem;
+  padding: 1.3rem 3.1rem;
+  border-radius: 2.2rem;
   border: none;
   background: #ff6565;
   color: white;
@@ -250,4 +255,110 @@ header nav img {
 }
 #conact-us-section button:hover {
   opacity: 0.9;
+}
+/****************************************************RESPONSIVE****************************************************************/
+
+@media only screen and (max-width: 768px) {
+  #hero-section {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 11.5rem;
+  }
+  .hero-info {
+    width: auto;
+    padding: 0rem 2rem;
+  }
+  header nav {
+    width: 100%;
+  }
+  .what-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .what-we-do-info {
+    width: auto;
+    padding: 0rem 2rem;
+  }
+  #what-we-do {
+    padding-bottom: 11.5rem;
+    padding-top: 11.5rem;
+  }
+  #our-result-secction {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 16rem;
+    height: 100%;
+    padding-top: 11.5rem;
+    padding-bottom: 11.5rem;
+  }
+  .our-result-section-info {
+    width: auto;
+    padding: 0rem 2rem;
+  }
+  .pentagon-cards {
+    display: flex;
+    gap: 4.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7.7rem;
+  }
+}
+@media only screen and (max-width: 646px) {
+  #hero-section {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 11.5rem;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  #hero-section {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 13rem;
+  }
+
+  header nav {
+    width: 100%;
+  }
+  .what-we-do-info {
+    width: auto;
+    padding: 0rem 2rem;
+  }
+
+  #what-we-do {
+    padding-bottom: 11.5rem;
+    padding-top: 11.5rem;
+  }
+  #conact-us-section {
+    width: auto;
+    padding: 13rem 2rem;
+  }
 }

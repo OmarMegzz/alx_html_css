@@ -24,14 +24,14 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
-  top: 27px;
+  top: 2.7rem;
   position: absolute;
 }
 
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  gap: 41px;
+  gap: 4.1rem;
 }
 
 header nav ul li {
@@ -48,8 +48,8 @@ nav li:hover {
 }
 
 header nav img {
-  width: 162px;
-  height: 32px;
+  width: 16.2rem;
+  height: 3.2rem;
 }
 /*********************************************HERO SECTION****************************************************************/
 
@@ -71,40 +71,38 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 313px;
-  margin-top: 212px;
+  width: 63.7rem;
+  height: 31.3rem;
+  margin-top: 21.2rem;
   font-weight: bold;
   text-align: center;
 }
 .hero-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 .hero-info h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .hero-info p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .hero-info button {
-  margin-top: 40px;
-  margin-bottom: 65px;
-
-  border-radius: 22px;
+  margin-top: 4rem;
+  margin-bottom: 6.5rem;
+  border-radius: 2.2rem;
   background-color: #ff6565;
   color: white;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  padding: 13px 31px;
+  padding: 1.3rem 3.1rem;
 }
 
 .hero-info button:hover {
   opacity: 0.9;
 }
-
 /*********************************************WHAT WE DO SECTION***********************************************************/
 
 #what-we-do {
