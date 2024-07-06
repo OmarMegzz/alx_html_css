@@ -452,4 +452,16 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
     width: auto;
     padding: 13rem 2rem;
   }
+  .first-card {
+    animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .second-card {
+    animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .third-card {
+    animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .fourth-card {
+    animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
 }

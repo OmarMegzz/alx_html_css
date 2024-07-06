@@ -189,6 +189,7 @@ header nav img {
     transform: translateX(0);
   }
 }
+
 @keyframes slide-down {
   0% {
     transform: translateY(-200%);
@@ -373,5 +374,17 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
   #what-we-do {
     padding-bottom: 11.5rem;
     padding-top: 11.5rem;
+  }
+  .first-card {
+    animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .second-card {
+    animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .third-card {
+    animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .fourth-card {
+    animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
   }
 }
