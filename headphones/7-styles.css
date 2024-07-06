@@ -105,29 +105,33 @@ header nav img {
 /*********************************************WHAT WE DO SECTION***********************************************************/
 
 #what-we-do {
-  height: 695px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 .what-we-do-info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 637px;
-  height: 148px;
+  width: 63.7rem;
+  height: 14.8rem;
 }
 .what-we-do-info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
+  animation: slide-down 0.3s ease-in-out forwards;
 }
 .what-we-do-info p {
-  line-height: 26px;
-  margin-top: 40px;
-  font-size: 16px;
+  line-height: 2.6rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
   text-align: center;
+  animation: slide-out 0.7s ease-in-out backwards;
 }
 
 .what-we-do-card {
@@ -135,25 +139,69 @@ header nav img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 207px;
-  height: 180px;
+  width: 20.7rem;
+  height: 18rem;
   text-align: center;
 }
 .what-we-do-card h2 {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 .what-we-do-card p {
-  line-height: 26px;
-  font-size: 14px;
-  margin-top: 13px;
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
 }
 .what-cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  margin-top: 97px;
+  margin-top: 9.7rem;
 }
+.first-card {
+  animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
+}
+.second-card {
+  animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+}
+.third-card {
+  animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+}
+.fourth-card {
+  animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
+}
+
+/****************************************************animation****************************************************************/
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* animation: slide-down 0.5s ease-in-out forwards;
+animation: slide-out 0.5s ease-in-out backwards;
+animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
+animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
 /**************************************************OUR RESULT SECTION**********************************************************/
 
 #our-result-secction {
