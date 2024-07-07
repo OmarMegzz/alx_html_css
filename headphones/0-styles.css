@@ -9,6 +9,23 @@ html {
 }
 :root {
   --text-color: var(#ff6565);
+
+  --bar-width: 40px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 1s ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 header {
@@ -42,6 +59,7 @@ header nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 nav li:hover {
   opacity: 0.9;
@@ -53,25 +71,6 @@ header nav img {
 }
 
 /*********************************************burger menu****************************************************************/
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-:root {
-  --bar-width: 40px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
-  --foreground: #333;
-  --background: white;
-  --hamburger-margin: 8px;
-  --animation-timing: 1s ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
 
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
@@ -162,7 +161,6 @@ a {
   justify-content: center;
   flex-direction: column;
   width: 63.7rem;
-  height: 31.3rem;
   margin-top: 21.2rem;
   font-weight: bold;
   text-align: center;
@@ -211,7 +209,6 @@ a {
   justify-content: center;
   flex-direction: column;
   width: 63.7rem;
-  height: 14.8rem;
 }
 .what-we-do-info h1 {
   font-size: 3.2rem;
@@ -452,7 +449,6 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-
     padding-bottom: 13rem;
     margin-bottom: 13rem;
   }

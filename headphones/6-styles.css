@@ -10,6 +10,26 @@ html {
 :root {
   --text-color: var(#ff6565);
 }
+:root {
+  --text-color: var(#ff6565);
+
+  --bar-width: 40px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 1s ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 header {
   width: 100%;
@@ -51,6 +71,76 @@ header nav img {
   width: 16.2rem;
   height: 3.2rem;
 }
+/*********************************************burger menu****************************************************************/
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing),
+    width var(--animation-timing) rotate var(--animation-timing),
+    tranlate var(--animation-timing);
+}
+.hamburger-menu input {
+  content: "";
+  width: calc(var(--bar-width) / 2);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.list-items-container {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger-menu:has(input:checked) + .list-items-container {
+  display: block;
+}
+
 /*********************************************HERO SECTION****************************************************************/
 
 #hero-section {
@@ -72,7 +162,6 @@ header nav img {
   justify-content: center;
   flex-direction: column;
   width: 63.7rem;
-  height: 31.3rem;
   margin-top: 21.2rem;
   font-weight: bold;
   text-align: center;
@@ -120,7 +209,6 @@ header nav img {
   justify-content: center;
   flex-direction: column;
   width: 63.7rem;
-  height: 14.8rem;
 }
 .what-we-do-info h1 {
   font-size: 3.2rem;
@@ -205,16 +293,16 @@ animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
 animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
 /**************************************************OUR RESULT SECTION**********************************************************/
 
-#our-result-secction {
+#our-result-section {
   background-image: url(images/headphones_hero_2.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 14.1rem 0 6.9rem 0;
   color: white;
 }
 .our-result-section-info {
@@ -222,9 +310,8 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 63.7rem;
+  width: 80%;
   text-align: center;
-  height: 18.4rem;
 }
 .our-result-section-info h1 {
   font-size: 3.2rem;
@@ -241,8 +328,10 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
+  flex-wrap: wrap;
   margin-top: 5.6rem;
+  gap: 4.2rem;
+  width: 80%;
 }
 .pentagon-card {
   display: flex;
@@ -411,38 +500,10 @@ footer p {
     width: auto;
     padding: 0rem 2rem;
   }
-  #what-we-do {
-    padding-bottom: 11.5rem;
-    padding-top: 11.5rem;
-  }
-  #our-result-secction {
-    background-image: url(images/headphones_hero_2.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    margin-top: 16rem;
-    height: 100%;
-    padding-top: 11.5rem;
-    padding-bottom: 11.5rem;
-  }
-  .our-result-section-info {
-    width: auto;
-    padding: 0rem 2rem;
-  }
-  .pentagon-cards {
-    display: flex;
-    gap: 4.2rem;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 7.7rem;
-  }
+
+  /* #our-result-section {
+    padding: 14.1rem 6.4rem 5.3rem 6.7rem;
+  } */
 }
 @media only screen and (max-width: 646px) {
   #hero-section {
@@ -461,7 +522,115 @@ footer p {
   header nav {
     width: 100%;
   }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  :root {
+    --bar-width: 2rem;
+    --bar-height: 0.2rem;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+    --hamburger-margin: 38px;
+    --animation-timing: 1s ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
+
+  /* #our-result-section {
+    padding: 14.1rem 6.4rem 5.3rem 6.7rem;
+  } */
+
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+  }
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 2rem;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing),
+      width var(--animation-timing) rotate var(--animation-timing),
+      tranlate var(--animation-timing);
+  }
+  .hamburger-menu input {
+    content: "";
+    width: calc(var(--bar-width) - 7px);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+  }
+
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+
+  .list-items-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2rem;
+  }
+  .list-items-container li {
+    margin-bottom: 1rem;
+  }
+  .list-items-container li a {
+    color: white;
+  }
+
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+
+  .sidebar {
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: var(--foreground);
+    color: var(--background);
+    max-width: 10rem;
+    min-height: 100vh;
+  }
+
+  .hamburger-menu:has(input:checked) + .list-items-container {
+    display: block;
+  }
 }
+
 @media only screen and (max-width: 490px) {
   #hero-section {
     background-image: url(images/headphones_hero_1.jpg);
@@ -469,9 +638,13 @@ footer p {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    padding-bottom: 13rem;
-  }
 
+    padding-bottom: 13rem;
+    margin-bottom: 13rem;
+  }
+  .hero-info {
+    width: auto;
+  }
   header nav {
     width: 100%;
   }
@@ -479,37 +652,97 @@ footer p {
     width: auto;
     padding: 0rem 2rem;
   }
+  ul {
+    list-style: none;
+  }
 
-  #what-we-do {
-    padding-bottom: 11.5rem;
-    padding-top: 11.5rem;
+  a {
+    text-decoration: none;
+    color: #000;
   }
-  #conact-us-section {
-    width: auto;
-    padding: 13rem 2rem;
+  :root {
+    --bar-width: 2rem;
+    --bar-height: 0.2rem;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+    --hamburger-margin: 38px;
+    --animation-timing: 1s ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   }
-  .footer-info {
+
+  /* #our-result-section {
+    padding: 12.5rem 3.5rem 6.9rem 3.5rem;
+  } */
+
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
   }
-  .footer-icons {
-    margin-top: 4.5rem;
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 2rem;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing),
+      width var(--animation-timing) rotate var(--animation-timing),
+      tranlate var(--animation-timing);
   }
-  footer p {
-    margin-top: 4.5rem;
+  .hamburger-menu input {
+    content: "";
+    width: calc(var(--bar-width) - 7px);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
   }
-  .first-card {
-    animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
+
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
   }
-  .second-card {
-    animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+
+  .list-items-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2rem;
   }
-  .third-card {
-    animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+
+  .list-items-container li a {
+    color: white;
   }
-  .fourth-card {
-    animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
+
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+
+  .hamburger-menu:has(input:checked) + .list-items-container {
+    display: block;
   }
 }

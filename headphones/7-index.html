@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="7-styles.css" />
     <title>headphones-7</title>
+    <script
+      src="https://kit.fontawesome.com/4a2b055604.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <ul class="list-items-container">
+        <li><a href="#">what we do</a></li>
+        <li><a href="#">our results</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
       <nav>
         <img src="./images/logo_headphones.png" alt="" />
         <ul>
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">our results</a></li>
-          <li><a href="#">contact us</a></li>
+          <li><a href="#what-we-do">what we do</a></li>
+          <li><a href="#our-result-secction">our results</a></li>
+          <li><a href="#conact-us-section">contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -70,7 +82,7 @@
         </div>
       </section>
 
-      <section id="our-result-secction">
+      <section id="our-result-section">
         <div class="our-result-section-info">
           <h1>Our results speak for themselves</h1>
           <p>
@@ -118,18 +130,18 @@
           <button>CALL TO ACTION</button>
         </div>
       </section>
-
-      <footer>
-        <div class="footer-info">
-          <img src="images/logo_headphones.png" alt="logo" />
-          <div class="footer-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <p>©headphones 2020</p>
-      </footer>
     </main>
+
+    <footer>
+      <div class="footer-info">
+        <img src="images/logo_headphones.png" alt="logo" />
+        <div class="footer-icons">
+          <i class="fa-brands fa-2x fa-facebook"></i>
+          <i class="fa-brands fa-2x fa-twitter"></i>
+          <i class="fa-brands fa-2x fa-instagram"></i>
+        </div>
+      </div>
+      <p>©headphones 2020</p>
+    </footer>
   </body>
 </html>
