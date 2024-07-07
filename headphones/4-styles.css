@@ -285,12 +285,6 @@ header nav img {
     transform: translateY(0);
   }
 }
-/* animation: slide-down 0.5s ease-in-out forwards;
-animation: slide-out 0.5s ease-in-out backwards;
-animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
 
 /**************************************************OUR RESULT SECTION**********************************************************/
 
@@ -387,12 +381,7 @@ animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
     transform: translateY(0);
   }
 }
-/* animation: slide-down 0.5s ease-in-out forwards;
-animation: slide-out 0.5s ease-in-out backwards;
-animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
-animation: slide-in 0.3s cubic-bezier(1, 0.7,  1,  1)  forwards; */
+
 /********************************************************CONTACT US*************************************************************/
 #conact-us-section {
   height: 100%;
@@ -473,7 +462,6 @@ footer p {
   margin-top: 17.5rem;
   margin-bottom: 3.9rem;
 }
-/****************************************************RESPONSIVE****************************************************************/
 
 /****************************************************RESPONSIVE****************************************************************/
 
@@ -620,17 +608,6 @@ footer p {
     width: 0;
   }
 
-  /* .sidebar {
-    transition: translate var(--animation-timing);
-    translate: -100%;
-    padding: 5rem 1rem;
-    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: var(--foreground);
-    color: var(--background);
-    max-width: 10rem;
-    min-height: 100vh;
-  } */
-
   .hamburger-menu:has(input:checked) + .list-items-container {
     display: block;
   }
@@ -749,5 +726,11 @@ footer p {
 
   .hamburger-menu:has(input:checked) + .list-items-container {
     display: block;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4.5rem;
   }
 }

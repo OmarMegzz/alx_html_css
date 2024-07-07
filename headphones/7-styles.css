@@ -744,4 +744,22 @@ footer p {
   .hamburger-menu:has(input:checked) + .list-items-container {
     display: block;
   }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+  }
+  .first-card {
+    animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .second-card {
+    animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .third-card {
+    animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
+  .fourth-card {
+    animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
+  }
 }
